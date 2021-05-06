@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="image">Movie Image</string>
+    <string name="movie_name">Movie Name</string>
+
+    <string name="network_failure_string">Connection to server failed. Please retry</string>
+</resources>
