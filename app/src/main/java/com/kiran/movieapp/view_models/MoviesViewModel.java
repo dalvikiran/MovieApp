@@ -3,16 +3,13 @@ package com.kiran.movieapp.view_models;
 import android.app.Application;
 import android.content.Context;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
-
 import com.kiran.movieapp.models.Movie;
 import com.kiran.movieapp.repositories.MovieRepository;
 import com.kiran.movieapp.retrofit_services.network_utils.IDataSourceCallback;
 import com.kiran.movieapp.utils.network.InternetConnectionUtil;
-
 import java.util.ArrayList;
 
 public class MoviesViewModel extends AndroidViewModel {
