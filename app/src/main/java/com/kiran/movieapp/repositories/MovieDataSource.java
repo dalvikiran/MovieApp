@@ -1,7 +1,6 @@
 package com.kiran.movieapp.repositories;
 
 import androidx.annotation.NonNull;
-import androidx.lifecycle.MutableLiveData;
 import com.kiran.movieapp.models.Movie;
 import com.kiran.movieapp.retrofit_services.network_utils.IDataSourceCallback;
 

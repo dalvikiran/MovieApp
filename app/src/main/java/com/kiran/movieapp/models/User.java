@@ -7,11 +7,6 @@ public class User {
     private String email;
     private String password;
 
-    public User(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -34,15 +29,6 @@ public class User {
             return "";
         }
         return password;
-    }
-
-    public boolean isEmailValid() {
-        return Patterns.EMAIL_ADDRESS.matcher(getEmail()).matches();
-    }
-
-
-    public boolean isPasswordLengthGreaterThan5() {
-        return getPassword().length() > 5;
     }
 
 }

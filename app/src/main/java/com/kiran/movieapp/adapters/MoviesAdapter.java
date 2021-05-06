@@ -10,12 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.kiran.movieapp.R;
 import com.kiran.movieapp.databinding.MovieItemLayoutBinding;
 import com.kiran.movieapp.models.Movie;
-import com.kiran.movieapp.retrofit_services.network_utils.NetworkURLs;
 
 import java.util.ArrayList;
 
@@ -53,11 +50,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         Movie movie = movieArrayList.get(position);
         if (movie != null){
             holder.movieItemLayoutBinding.setMovie(movie);
-
-           /* if (movie.getTitle().length() > 18){
-                holder.movieItemLayoutBinding.movieNameTextView.startAnimation(
-                        (Animation) AnimationUtils.loadAnimation(context,R.anim.scroll_animation));
-            }*/
 
         }
     }

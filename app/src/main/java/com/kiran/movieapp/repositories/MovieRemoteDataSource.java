@@ -3,7 +3,6 @@ package com.kiran.movieapp.repositories;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
-import androidx.lifecycle.MutableLiveData;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

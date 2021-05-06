@@ -26,17 +26,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-       /* SingletonNameViewModelFactory singletonNameViewModelFactory = new SingletonNameViewModelFactory(MyViewModel.getInstance());
-        MyViewModel viewModel = ViewModelProviders.of(this,singletonNameViewModelFactory).get(MyViewModel.class);
-        viewModel.getData();
-*/
         activityLoginBinding = DataBindingUtil.setContentView(this,R.layout.activity_login);
 
         loginViewModel = ViewModelProviders.of(this).get(LoginViewModel.class);
         ViewModelFactory viewModelFactory = new ViewModelFactory(getApplication());
         loginViewModel = ViewModelProviders.of(this,viewModelFactory).get(LoginViewModel.class);
 
-//         loginViewModel = new LoginViewModel();
         activityLoginBinding.setLoginViewModel(loginViewModel);
         activityLoginBinding.setLifecycleOwner(this);
 
@@ -54,16 +49,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        /*loginViewModel.getUser().observe(this, new Observer<User>() {
-            @Override
-            public void onChanged(@NonNull User user) {
-                if (user.getEmail().length() > 0 || user.getPassword().length() > 0)
-                    Toast.makeText(getApplicationContext(),
-                            "email : " + user.getEmail() + " password " + user.getPassword(),
-                            Toast.LENGTH_SHORT).show();
 
-            }
-        });*/
 
     }
 }

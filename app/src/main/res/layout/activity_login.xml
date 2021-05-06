@@ -62,37 +62,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText" />
 
-            <!--<com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:errorEnabled="true"
-                app:error="@{loginViewModel.errorEmail}">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Email"
-                    android:inputType="textEmailAddress"
-                    android:text="@={loginViewModel.email}"/>
-
-            </com.google.android.material.textfield.TextInputLayout>-->
-
-           <!-- <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:errorEnabled="true"
-                app:error="@{loginViewModel.errorPassword}">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:inputType="textPassword"
-                    android:maxLength="12"
-                    android:text="@={loginViewModel.password}"/>
-
-            </com.google.android.material.textfield.TextInputLayout>-->
-
 
             <Button
                 android:layout_width="match_parent"

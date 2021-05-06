@@ -17,12 +17,8 @@ public class BindingAdapter {
                     .placeholder(R.drawable.movie_image_placeholder)
                     .error(R.drawable.movie_image_placeholder)
                     .diskCacheStrategy(DiskCacheStrategy.NONE)
-//                    .skipMemoryCache(true)
                     .into(view);
 
-           /* Glide.with(view.getContext())
-                    .load(imageUrl).apply(new RequestOptions().circleCrop())
-                    .into(view);*/
         }
     }
 }

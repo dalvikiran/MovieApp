@@ -7,10 +7,7 @@ import android.telephony.TelephonyManager;
 
 import com.kiran.movieapp.utils.Constants;
 
-/**
- * Summary
- * This java file is used for getting the changes in internet connectivity
- */
+
 public class InternetConnectionUtil {
 
     private static int TYPE_WIFI = 1;

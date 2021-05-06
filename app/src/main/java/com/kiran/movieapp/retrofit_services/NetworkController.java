@@ -1,10 +1,6 @@
 package com.kiran.movieapp.retrofit_services;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Environment;
-import android.util.Log;
-
 import androidx.annotation.NonNull;
 import com.kiran.movieapp.R;
 import com.kiran.movieapp.retrofit_services.network_utils.NetworkResponseCallback;
@@ -12,10 +8,7 @@ import com.kiran.movieapp.retrofit_services.network_utils.NetworkUtils;
 import com.kiran.movieapp.retrofit_services.services.MovieService;
 
 import org.json.JSONObject;
-import java.io.IOException;
-import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
-import okio.Buffer;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,19 +32,6 @@ public class NetworkController {
         return instance;
     }
 
-/*    private String bodyToString(final RequestBody request) {
-        try {
-            final RequestBody copy = request;
-            final Buffer buffer = new Buffer();
-            if (copy != null)
-                copy.writeTo(buffer);
-            else
-                return "";
-            return buffer.readUtf8();
-        } catch (final IOException e) {
-            return "did not work";
-        }
-    }*/
 
     private class RetrofitServiceTask implements Callback<ResponseBody> {
 

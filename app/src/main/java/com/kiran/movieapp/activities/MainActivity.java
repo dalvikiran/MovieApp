@@ -30,12 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
     private LinearLayoutManager mLayoutManager;
     int pastVisiblesItems, visibleItemCount, totalItemCount;
-//    ArrayList<Movie> movieArrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
 
         activityMainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
 
@@ -91,40 +89,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-      /*  recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
-                super.onScrollStateChanged(recyclerView, newState);
 
-            }
-
-            @Override
-            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-                *//*if (dy == recyclerView.getChildAt(0).getMeasuredHeight() - recyclerView.getMeasuredHeight()) {
-                    moviesViewModel.getPopularMovies();
-                }*//*
-            }
-        });*/
-       /* recyclerView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
-            @Override
-            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-                moviesViewModel.getPopularMovies();
-            }
-
-           *//* @Override
-            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-                // on scroll change we are checking when users scroll as bottom.
-                if (scrollY == v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight()) {
-                    // in this method we are incrementing page number,
-                    // making progress bar visible and calling get data method.
-                    moviesViewModel.getPopularMovies();
-                    moviesViewModel.pageNo++;
-                    loadingPB.setVisibility(View.VISIBLE);
-                    getDataFromAPI(page, limit);
-                }
-            }*//*
-        });*/
 
     }
 }
